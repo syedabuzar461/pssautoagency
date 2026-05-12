@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "echo \"window.CONFIG = { GOOGLE_SCRIPT_URL: '$GOOGLE_SCRIPT_URL' };\" > config.js"
+  },
   "dependencies": {
     "@dataconnect/generated": "file:src/dataconnect-generated",
     "firebase": "^12.13.0"
