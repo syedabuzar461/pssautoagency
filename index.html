@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="PSS – An Award-Winning Performance Marketing & AI Development Agency. We drive traffic, build brands, boost conversions, and retain customers." />
+  <meta name="theme-color" content="#C61F3E" />
   <title>PSS | Performance Marketing & AI Development Agency</title>
+  <!-- Resource Hints for Speed -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Non-render-blocking font load -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -74,6 +81,7 @@
     <div class="container">
       <p class="trusted__label">Trusted by :</p>
       <div class="trusted__logos">
+        <div class="trusted__logo trusted__logo--partner" id="tl-partner"><span>Incognito Builds</span></div>
         <div class="trusted__logo" id="tl-1"><span>TechVault</span></div>
         <div class="trusted__logo" id="tl-2"><span>NovaCorp</span></div>
         <div class="trusted__logo" id="tl-3"><span>Zenara</span></div>
@@ -205,6 +213,7 @@
           </div>
           <h3 class="case-card__title">420% Organic Traffic Growth in 8 Months</h3>
           <p class="case-card__client">TechVault — B2B SaaS</p>
+          <p class="case-card__tech-seal">◈ Infrastructure by Incognito Builds</p>
           <a href="#contact" class="btn btn--outline-sm" id="case-cta-1">VIEW CASE STUDY →</a>
         </article>
 
@@ -216,6 +225,7 @@
           </div>
           <h3 class="case-card__title">18x ROAS on Meta Ads for D2C Brand</h3>
           <p class="case-card__client">PeakRetail — E-commerce</p>
+          <p class="case-card__tech-seal">◈ Infrastructure by Incognito Builds</p>
           <a href="#contact" class="btn btn--outline-sm btn--outline-white" id="case-cta-2">VIEW CASE STUDY →</a>
         </article>
 
@@ -227,6 +237,7 @@
           </div>
           <h3 class="case-card__title">AI Chatbot Slashed Support Costs by 65%</h3>
           <p class="case-card__client">Meridian — FinTech</p>
+          <p class="case-card__tech-seal">◈ Infrastructure by Incognito Builds</p>
           <a href="#contact" class="btn btn--outline-sm" id="case-cta-3">VIEW CASE STUDY →</a>
         </article>
 
@@ -270,6 +281,33 @@
       </div>
     </div>
   </section>
+  
+  <!-- ===== COLLABORATION BLOCK ===== -->
+  <section class="collab-block">
+    <div class="container collab-container">
+      <div class="collab-side collab-side--left">
+        <div class="logo-box">
+          <span class="logo-letters">PSS</span>
+        </div>
+        <div class="collab-card">
+          <strong class="collab-card__title">Marketing Strategy</strong>
+          We find your audience and bring them to your door.
+        </div>
+      </div>
+      <div class="collab-center">
+        <span class="collab-x">X</span>
+      </div>
+      <a href="https://incognitohack.vercel.app/" target="_blank" rel="noopener noreferrer" class="collab-side collab-side--right collab-link">
+        <div class="logo-box logo-box--dark">
+          <span class="logo-letters">INCOGNITO</span>
+        </div>
+        <div class="collab-card collab-card--dark">
+          <strong class="collab-card__title">Engineering Lab</strong>
+          We build the door, the floor, and the engine that powers the sale.
+        </div>
+      </a>
+    </div>
+  </section>
 
   <!-- ===== FAQ ===== -->
   <section class="faq" id="faq">
@@ -306,6 +344,25 @@
             <p>We recommend 3 months to properly optimise campaigns. However, we're flexible — just reach out and we'll find what works for you.</p>
           </div>
         </div>
+        <!-- Tech Category -->
+        <div class="faq-item faq-item--tech" id="faq-6">
+          <button class="faq-item__q" id="faq-btn-6" aria-expanded="false">Who handles the technical infrastructure of the projects?</button>
+          <div class="faq-item__a" id="faq-ans-6">
+            <p>All high-level engineering and backend architecture are powered by our partners at Incognito Builds. This ensures your site is built on professional-grade systems, not just basic templates. <span class="tech-badge">⚙ Engineering by Incognito</span></p>
+          </div>
+        </div>
+        <div class="faq-item faq-item--tech" id="faq-7">
+          <button class="faq-item__q" id="faq-btn-7" aria-expanded="false">How do you ensure the website handles high traffic without crashing?</button>
+          <div class="faq-item__a" id="faq-ans-7">
+            <p>Through the Incognito X PSS alliance, we inject edge-caching and scalable cloud infrastructure into every project. Our backends are engineered to stay 100% stable, even during aggressive ad campaigns. <span class="tech-badge">⚙ Engineering by Incognito</span></p>
+          </div>
+        </div>
+        <div class="faq-item faq-item--tech" id="faq-8">
+          <button class="faq-item__q" id="faq-btn-8" aria-expanded="false">What makes your "AI Development" different from other agencies?</button>
+          <div class="faq-item__a" id="faq-ans-8">
+            <p>While most agencies use basic plugins, we utilize the Incognito Engineering Lab to build custom AI agents and automated workflows tailored specifically to your business data and CRM. <span class="tech-badge">⚙ Engineering by Incognito</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -321,41 +378,75 @@
           <a href="tel:+911234567890"      class="contact__detail-item" id="contact-phone">☎ +91 12345 67890</a>
         </div>
         <div class="contact__socials" id="contact-socials">
-          <a href="#" class="social-btn" id="soc-ig">IG</a>
-          <a href="#" class="social-btn" id="soc-li">LI</a>
-          <a href="#" class="social-btn" id="soc-x">X</a>
-          <a href="#" class="social-btn" id="soc-yt">YT</a>
+          <a href="#" class="social-btn" id="soc-ig" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-btn" id="soc-li" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" id="soc-x" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-btn" id="soc-yt" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
         </div>
       </div>
 
       <form class="contact__form" id="contact-form" novalidate>
+        <p class="form-social-proof">Join 50+ brands scaling with PSS Digital & Incognito Engineering.</p>
+        
         <div class="form-row">
           <div class="form-group">
-            <label for="f-name">YOUR NAME</label>
-            <input type="text"   id="f-name"    name="name"    placeholder="John Doe" required />
+            <label for="f-firstname">FIRST NAME</label>
+            <input type="text" id="f-firstname" name="first_name" placeholder="First Name" required />
           </div>
           <div class="form-group">
-            <label for="f-email">EMAIL ADDRESS</label>
-            <input type="email"  id="f-email"   name="email"   placeholder="john@company.com" required />
+            <label for="f-lastname">LAST NAME</label>
+            <input type="text" id="f-lastname" name="last_name" placeholder="Last Name" required />
           </div>
         </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-email">EMAIL ADDRESS</label>
+            <input type="email" id="f-email" name="email_id" placeholder="xxxx@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="f-company">COMPANY NAME</label>
+            <input type="text" id="f-company" name="company_name" placeholder="Company LLC" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-phone">PHONE NUMBER</label>
+            <input type="tel" id="f-phone" name="phone_number" required />
+          </div>
+          <div class="form-group">
+            <label for="f-budget">MONTHLY BUDGET</label>
+            <input type="text" id="f-budget" name="budget_range" placeholder="e.g. ₹1,00,000" required />
+          </div>
+        </div>
+
         <div class="form-group">
           <label for="f-service">SERVICE INTERESTED IN</label>
-          <select id="f-service" name="service">
+          <select id="f-service" name="service_type" required>
             <option value="">Select a service…</option>
-            <option value="seo">SEO &amp; Content</option>
-            <option value="paid">Paid Media</option>
-            <option value="branding">Branding</option>
-            <option value="ai">AI Development</option>
-            <option value="cro">CRO</option>
-            <option value="other">Other</option>
+            <option value="Performance Marketing">Performance Marketing (Ads)</option>
+            <option value="SEO">Search Engine Optimization (SEO)</option>
+            <option value="Full-Stack Development">Full-Stack Development (The Incognito Edge)</option>
+            <option value="AI & Automation">AI & Automation Workflows</option>
           </select>
         </div>
+
         <div class="form-group">
           <label for="f-msg">YOUR MESSAGE</label>
-          <textarea id="f-msg" name="message" rows="5" placeholder="Tell us about your goals…" required></textarea>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Tell us about your specific requirements…" required></textarea>
         </div>
+
         <button type="submit" class="btn btn--purple btn--full" id="form-submit">SEND MESSAGE 🚀</button>
+        <div class="backend-status">[ Secured & Engineered by Incognito Builds ]</div>
         <p class="form-success" id="form-success" aria-live="polite"></p>
       </form>
     </div>
@@ -371,10 +462,18 @@
         </div>
         <p>Performance Marketing &amp; AI Development Agency.<br>Results-driven, data-obsessed, growth-focused.</p>
         <div class="footer__socials">
-          <a href="#" id="ft-ig" aria-label="Instagram">IG</a>
-          <a href="#" id="ft-li" aria-label="LinkedIn">LI</a>
-          <a href="#" id="ft-x"  aria-label="Twitter">X</a>
-          <a href="#" id="ft-yt" aria-label="YouTube">YT</a>
+          <a href="#" id="ft-ig" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" id="ft-li" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" id="ft-x"  aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" id="ft-yt" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
         </div>
       </div>
 
@@ -404,9 +503,12 @@
 
     <div class="footer__bottom container">
       <p>&copy; <span id="footer-year"></span> PSS Digital Agency. All Rights Reserved.</p>
+      <p class="footer__credits">Design by PSS | Architecture by <a href="https://incognitohack.vercel.app/" target="_blank" rel="noopener noreferrer" class="incognito-footer-link">Incognito Builds</a></p>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
