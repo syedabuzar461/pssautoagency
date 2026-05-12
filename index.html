@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PSS – An Award-Winning Performance Marketing & AI Development Agency. We drive traffic, build brands, boost conversions, and retain customers." />
+  <title>PSS | Performance Marketing & AI Development Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header" class="header">
+    <div class="header__inner container">
+
+      <!-- Logo Box -->
+      <a href="#hero" class="header__logo" id="logo-link">
+        <span class="logo-box">
+          <span class="logo-letters">PSS</span>
+          <span class="logo-tagline">Digital Agency</span>
+        </span>
+      </a>
+
+      <!-- Nav -->
+      <nav class="header__nav" id="main-nav">
+        <ul class="nav__list">
+          <li><a href="#about"        class="nav__link" id="nav-team">TEAM</a></li>
+          <li><a href="#services"     class="nav__link" id="nav-services">SERVICES</a></li>
+          <li><a href="#clients"      class="nav__link" id="nav-clients">CLIENTS</a></li>
+          <li class="has-dropdown">
+            <a href="#case-studies"   class="nav__link" id="nav-cases">CASE STUDIES <span class="caret">▾</span></a>
+            <ul class="dropdown" id="dropdown-cases">
+              <li><a href="#case-studies" id="dd-seo">SEO Growth</a></li>
+              <li><a href="#case-studies" id="dd-paid">Paid Media</a></li>
+              <li><a href="#case-studies" id="dd-ai">AI Automation</a></li>
+            </ul>
+          </li>
+          <li><a href="#media"        class="nav__link" id="nav-media">MEDIA</a></li>
+          <li><a href="#contact"      class="nav__link" id="nav-contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--nav" id="header-cta">GET IN TOUCH!</a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero__content container">
+      <p class="hero__eyebrow">HEY THERE!</p>
+      <h1 class="hero__title">
+        WE ARE <span id="typewriter-word" class="hero__typed"></span><span class="cursor">|</span>
+      </h1>
+      <p class="hero__sub">An Award-Winning Performance Marketing &amp; AI Development Agency</p>
+      <a href="#contact" class="btn btn--purple" id="hero-cta">GET A FREE QUOTE!</a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" id="hero-scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ===== TRUSTED BY ===== -->
+  <section class="trusted" id="clients">
+    <div class="container">
+      <p class="trusted__label">Trusted by :</p>
+      <div class="trusted__logos">
+        <div class="trusted__logo" id="tl-1"><span>TechVault</span></div>
+        <div class="trusted__logo" id="tl-2"><span>NovaCorp</span></div>
+        <div class="trusted__logo" id="tl-3"><span>Zenara</span></div>
+        <div class="trusted__logo" id="tl-4"><span>PeakRetail</span></div>
+        <div class="trusted__logo" id="tl-5"><span>Orbitex</span></div>
+        <div class="trusted__logo" id="tl-6"><span>Meridian</span></div>
+        <div class="trusted__logo" id="tl-7"><span>Finova</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip" id="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp;</span>
+      <span>OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp; OUR SERVICES &nbsp;★&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== WHAT WE DO ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-heading" id="services-heading">WHAT WE DO</h2>
+      <div class="services__grid">
+
+        <div class="service-card" id="svc-traffic">
+          <div class="service-card__icon">
+            <!-- Bar chart -->
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4"  y="30" width="12" height="24" fill="currentColor"/>
+              <rect x="24" y="16" width="12" height="38" fill="currentColor"/>
+              <rect x="44" y="4"  width="12" height="50" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">TRAFFIC</h3>
+          <p class="service-card__desc">We channel the right audiences using SEO, paid media, social ads, and content engines that compound over time.</p>
+        </div>
+
+        <div class="service-card" id="svc-branding">
+          <div class="service-card__icon">
+            <!-- Diamond -->
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 4L56 24L30 56L4 24Z" fill="currentColor" opacity=".15" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M4 24H56M15 4H45L56 24H4L15 4Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">BRANDING</h3>
+          <p class="service-card__desc">We craft brand identities that command attention and embed themselves permanently in your customers' minds.</p>
+        </div>
+
+        <div class="service-card" id="svc-conversions">
+          <div class="service-card__icon">
+            <!-- Target -->
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="26" stroke="currentColor" stroke-width="3"/>
+              <circle cx="30" cy="30" r="16" stroke="currentColor" stroke-width="3"/>
+              <circle cx="30" cy="30" r="6"  fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">CONVERSIONS</h3>
+          <p class="service-card__desc">Every click is an opportunity. We optimise landing pages and funnels to turn interest into measurable revenue.</p>
+        </div>
+
+        <div class="service-card" id="svc-retention">
+          <div class="service-card__icon">
+            <!-- Heart user -->
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="18" r="10" stroke="currentColor" stroke-width="3"/>
+              <path d="M8 52c0-12.15 9.85-22 22-22s22 9.85 22 22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M38 10c2-3 7-3 7 2s-5 7-7 9c-2-2-7-4-7-9s5-5 7-2z" fill="currentColor" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">RETENTION</h3>
+          <p class="service-card__desc">Winning a customer once is easy. Keeping them loyal is an art. We build systems that maximise lifetime value.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS / ABOUT ===== -->
+  <section class="stats" id="about">
+    <div class="container">
+      <h2 class="section-heading section-heading--white">WHY CHOOSE PSS?</h2>
+      <div class="stats__grid">
+        <div class="stat-item" id="stat-campaigns">
+          <span class="stat-item__num">500+</span>
+          <span class="stat-item__label">Campaigns Launched</span>
+        </div>
+        <div class="stat-item" id="stat-roas">
+          <span class="stat-item__num">12x</span>
+          <span class="stat-item__label">Average ROAS</span>
+        </div>
+        <div class="stat-item" id="stat-retention">
+          <span class="stat-item__num">98%</span>
+          <span class="stat-item__label">Client Retention Rate</span>
+        </div>
+        <div class="stat-item" id="stat-awards">
+          <span class="stat-item__num">10+</span>
+          <span class="stat-item__label">Industry Awards</span>
+        </div>
+      </div>
+      <div class="stats__text">
+        <p>PSS is a performance-first digital agency built on data, creativity, and relentless execution. From scrappy startups to global enterprises, we help brands scale faster and smarter.</p>
+        <a href="#contact" class="btn btn--white-outline" id="about-cta">MEET THE TEAM →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE 2 ===== -->
+  <div class="marquee-strip marquee-strip--purple" id="marquee-2" aria-hidden="true">
+    <div class="marquee-track marquee-track--rev">
+      <span>PERFORMANCE MARKETING &nbsp;✦&nbsp; SEO &nbsp;✦&nbsp; PAID MEDIA &nbsp;✦&nbsp; AI DEVELOPMENT &nbsp;✦&nbsp; BRANDING &nbsp;✦&nbsp; CRO &nbsp;✦&nbsp; EMAIL MARKETING &nbsp;✦&nbsp; SOCIAL MEDIA &nbsp;✦&nbsp;</span>
+      <span>PERFORMANCE MARKETING &nbsp;✦&nbsp; SEO &nbsp;✦&nbsp; PAID MEDIA &nbsp;✦&nbsp; AI DEVELOPMENT &nbsp;✦&nbsp; BRANDING &nbsp;✦&nbsp; CRO &nbsp;✦&nbsp; EMAIL MARKETING &nbsp;✦&nbsp; SOCIAL MEDIA &nbsp;✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== CASE STUDIES ===== -->
+  <section class="cases" id="case-studies">
+    <div class="container">
+      <h2 class="section-heading" id="cases-heading">CASE STUDIES</h2>
+      <div class="cases__grid">
+
+        <article class="case-card" id="case-1">
+          <div class="case-card__tag">SEO</div>
+          <div class="case-card__img" style="background:#C61F3E;">
+            <span class="case-card__stat">420%</span>
+            <span class="case-card__stat-label">Organic Growth</span>
+          </div>
+          <h3 class="case-card__title">420% Organic Traffic Growth in 8 Months</h3>
+          <p class="case-card__client">TechVault — B2B SaaS</p>
+          <a href="#contact" class="btn btn--outline-sm" id="case-cta-1">VIEW CASE STUDY →</a>
+        </article>
+
+        <article class="case-card case-card--featured" id="case-2">
+          <div class="case-card__tag case-card__tag--white">PAID MEDIA</div>
+          <div class="case-card__img" style="background:#7c3aed;">
+            <span class="case-card__stat">18x</span>
+            <span class="case-card__stat-label">ROAS on Meta</span>
+          </div>
+          <h3 class="case-card__title">18x ROAS on Meta Ads for D2C Brand</h3>
+          <p class="case-card__client">PeakRetail — E-commerce</p>
+          <a href="#contact" class="btn btn--outline-sm btn--outline-white" id="case-cta-2">VIEW CASE STUDY →</a>
+        </article>
+
+        <article class="case-card" id="case-3">
+          <div class="case-card__tag">AI</div>
+          <div class="case-card__img" style="background:#0d0d0d;">
+            <span class="case-card__stat">65%</span>
+            <span class="case-card__stat-label">Cost Reduction</span>
+          </div>
+          <h3 class="case-card__title">AI Chatbot Slashed Support Costs by 65%</h3>
+          <p class="case-card__client">Meridian — FinTech</p>
+          <a href="#contact" class="btn btn--outline-sm" id="case-cta-3">VIEW CASE STUDY →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="media">
+    <div class="container">
+      <h2 class="section-heading section-heading--center" id="testi-heading">REVIEWS THAT'LL MAKE YOU<br>CARTWHEEL WITH JOY</h2>
+      <div class="testimonials__grid">
+
+        <blockquote class="testi-card" id="testi-1">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"PSS completely transformed our digital presence. Within 6 months our organic leads doubled and CPA dropped by 40%. These people know their craft."</p>
+          <footer class="testi-card__footer">
+            <strong>Ananya Rao</strong>
+            <span>Co-Founder, Zenara Health</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi-card" id="testi-2">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"The PSS team doesn't just run ads — they think strategically. Our revenue grew 3x in under a year. Absolutely phenomenal work."</p>
+          <footer class="testi-card__footer">
+            <strong>Rahul Mehta</strong>
+            <span>CEO, Orbitex Technologies</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi-card" id="testi-3">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"From day one PSS treated us like partners. The transparency, data-driven approach, and sheer creativity is second to none. Highly recommend!"</p>
+          <footer class="testi-card__footer">
+            <strong>Priya Nair</strong>
+            <span>Marketing Director, NovaCorp</span>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container faq__inner">
+      <h2 class="section-heading" id="faq-heading">FAQ</h2>
+      <div class="faq__list" id="faq-list">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-item__q" id="faq-btn-1" aria-expanded="false">How does PSS measure success?</button>
+          <div class="faq-item__a" id="faq-ans-1">
+            <p>We align every campaign to KPIs that matter — revenue, leads, ROAS, LTV. We provide transparent real-time dashboards so you always know what's happening and why.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-item__q" id="faq-btn-2" aria-expanded="false">What industries do you specialise in?</button>
+          <div class="faq-item__a" id="faq-ans-2">
+            <p>We work across e-commerce, SaaS, FinTech, health &amp; wellness, real estate, and education. Our strategies are always tailored to your specific market.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-item__q" id="faq-btn-3" aria-expanded="false">How long before I see results?</button>
+          <div class="faq-item__a" id="faq-ans-3">
+            <p>Paid media shows results in 2–4 weeks. SEO and content build compounding momentum over 3–6 months. We'll set honest expectations from day one.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-item__q" id="faq-btn-4" aria-expanded="false">Do you offer AI development services?</button>
+          <div class="faq-item__a" id="faq-ans-4">
+            <p>Yes! We build custom AI solutions — chatbots, predictive analytics, content pipelines, and automation systems that integrate with your existing tech stack.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-item__q" id="faq-btn-5" aria-expanded="false">What is the minimum engagement period?</button>
+          <div class="faq-item__a" id="faq-ans-5">
+            <p>We recommend 3 months to properly optimise campaigns. However, we're flexible — just reach out and we'll find what works for you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__left">
+        <h2 class="section-heading section-heading--white">LET'S TALK!</h2>
+        <p class="contact__sub">Ready to scale your brand? Drop us a message and our team will get back to you within 24 hours.</p>
+        <div class="contact__details">
+          <a href="mailto:hello@pss.agency" class="contact__detail-item" id="contact-email">✉ hello@pss.agency</a>
+          <a href="tel:+911234567890"      class="contact__detail-item" id="contact-phone">☎ +91 12345 67890</a>
+        </div>
+        <div class="contact__socials" id="contact-socials">
+          <a href="#" class="social-btn" id="soc-ig">IG</a>
+          <a href="#" class="social-btn" id="soc-li">LI</a>
+          <a href="#" class="social-btn" id="soc-x">X</a>
+          <a href="#" class="social-btn" id="soc-yt">YT</a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">YOUR NAME</label>
+            <input type="text"   id="f-name"    name="name"    placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="f-email">EMAIL ADDRESS</label>
+            <input type="email"  id="f-email"   name="email"   placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-service">SERVICE INTERESTED IN</label>
+          <select id="f-service" name="service">
+            <option value="">Select a service…</option>
+            <option value="seo">SEO &amp; Content</option>
+            <option value="paid">Paid Media</option>
+            <option value="branding">Branding</option>
+            <option value="ai">AI Development</option>
+            <option value="cro">CRO</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-msg">YOUR MESSAGE</label>
+          <textarea id="f-msg" name="message" rows="5" placeholder="Tell us about your goals…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--purple btn--full" id="form-submit">SEND MESSAGE 🚀</button>
+        <p class="form-success" id="form-success" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-letters">PSS</span>
+          <span class="logo-tagline">Digital Agency</span>
+        </div>
+        <p>Performance Marketing &amp; AI Development Agency.<br>Results-driven, data-obsessed, growth-focused.</p>
+        <div class="footer__socials">
+          <a href="#" id="ft-ig" aria-label="Instagram">IG</a>
+          <a href="#" id="ft-li" aria-label="LinkedIn">LI</a>
+          <a href="#" id="ft-x"  aria-label="Twitter">X</a>
+          <a href="#" id="ft-yt" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="#about"        id="ft-team">Team</a></li>
+          <li><a href="#services"     id="ft-svc">Services</a></li>
+          <li><a href="#clients"      id="ft-cli">Clients</a></li>
+          <li><a href="#case-studies" id="ft-cs">Case Studies</a></li>
+          <li><a href="#contact"      id="ft-con">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>SERVICES</h4>
+        <ul>
+          <li>SEO &amp; Content</li>
+          <li>Paid Media</li>
+          <li>Social Media</li>
+          <li>Branding</li>
+          <li>AI Development</li>
+          <li>CRO</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <p>&copy; <span id="footer-year"></span> PSS Digital Agency. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

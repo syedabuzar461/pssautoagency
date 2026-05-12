@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "psssyeds"
+  },
+  "targets": {
+    "psssyeds": {
+      "hosting": {
+        "pss-site": [
+          "pssmarketingagency-b240e"
+        ]
+      }
+    }
+  }
+}
