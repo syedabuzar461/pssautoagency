@@ -98,9 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
       params.append('email_id',     document.getElementById('f-email').value);
       params.append('company_name', document.getElementById('f-company').value);
       params.append('phone_number', iti ? iti.getNumber() : phoneInput.value);
-      params.append('budget_range', document.getElementById('f-budget').value);
-      params.append('service_type', document.getElementById('f-service').value);
-      params.append('message',      document.getElementById('f-msg').value);
+      var budgetEl = document.getElementById('f-budget');
+      if (budgetEl) {
+        params.append('budget_range', budgetEl.value);
+      }
+      params.append('service_type', document.getElementById('f-service') ? document.getElementById('f-service').value : '');
+      params.append('message',      document.getElementById('f-msg') ? document.getElementById('f-msg').value : '');
 
       submitBtn.textContent = 'SENDING…';
       submitBtn.disabled = true;
